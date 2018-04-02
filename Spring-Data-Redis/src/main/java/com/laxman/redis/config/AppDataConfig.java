@@ -13,8 +13,9 @@ public class AppDataConfig {
 
 	@Bean
 	public JedisConnectionFactory jedisConnectionFactory() {
+		//Redis host and post
 		RedisStandaloneConfiguration config = new RedisStandaloneConfiguration(
-				"sample-test.577gj8.ng.0001.use1.cache.amazonaws.com", 6379);
+				"your Redis host", 6379);
 		JedisConnectionFactory factory = new JedisConnectionFactory(config);
 		return factory;
 
