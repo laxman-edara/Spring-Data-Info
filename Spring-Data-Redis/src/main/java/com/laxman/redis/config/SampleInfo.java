@@ -28,7 +28,7 @@ public class SampleInfo {
 		List<CacheCluster> clusters = clusterResult.getCacheClusters();
 		System.out.println(clusters);*/
 		RedisStandaloneConfiguration config = new RedisStandaloneConfiguration(
-				"sample-test.577gj8.ng.0001.use1.cache.amazonaws.com", 6379);
+				"your Redis host", 6379);
 		JedisConnectionFactory factory = new JedisConnectionFactory(config);
 		System.out.println(factory);
 		String str = "edara";
